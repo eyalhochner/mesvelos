@@ -62,3 +62,29 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const data = {
+        "ville": [
+            {"name": "Vélo de ville 1", "image": "images/velo_ville.jpg"},
+            {"name": "Vélo de ville 2", "image": "images/velo_ville.jpg"}
+        ],
+        "vtt": [
+            {"name": "VTT 1", "image": "images/vtt.jpg"},
+            {"name": "VTT 2", "image": "images/vtt.jpg"}
+        ],
+        "course": [
+            {"name": "Vélo de course 1", "image": "images/velo_course.jpg"},
+            {"name": "Vélo de course 2", "image": "images/velo_course.jpg"}
+        ]
+    };
+
+    const categories = ["ville", "vtt", "course"];
+    categories.forEach(category => {
+        const ul = document.getElementById(category);
+        data[category].forEach(bike => {
+            const li = document.createElement('li');
+            li.innerHTML = `<img src="${bike.image}" alt="${bike.name}"><p>${bike.name}</p><button>Réserver</button>`;
+            ul.appendChild(li);
+        });
+    });
+});
