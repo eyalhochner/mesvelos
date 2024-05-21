@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #48a9e6;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#bike-list, #reservation-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bike {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.bike img {
+    max-width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.bike h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.bike p {
+    margin: 0 0 10px;
+}
+
+.reserve-button {
+    display: inline-block;
+    background-color: #48a9e6;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.reserve-button:hover {
+    background-color: #357ab8;
+}
+
+.bike form {
+    display: flex;
+    flex-direction: column;
+}
+
+.bike form label {
+    margin-top: 5px;
+}
+
+.bike form input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.bike button {
+    background-color: #48a9e6;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bike button:hover {
+    background-color: #357ab8;
+}
+

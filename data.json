@@ -1,0 +1,25 @@
+{
+    "bikes": [
+        {
+            "name": "Vélo de Ville",
+            "description": "Parfait pour une balade en ville.",
+            "price": 15,
+            "image": "images/velo_ville.jpg",
+            "category": "Ville"
+        },
+        {
+            "name": "VTT",
+            "description": "Idéal pour les chemins de montagne.",
+            "price": 20,
+            "image": "images/vtt.jpg",
+            "category": "Montagne"
+        },
+        {
+            "name": "Vélo de Course",
+            "description": "Pour les amateurs de vitesse.",
+            "price": 25,
+            "image": "images/velo_course.jpg",
+            "category": "Course"
+        }
+    ]
+}
